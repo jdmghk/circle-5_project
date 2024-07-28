@@ -4,8 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle 5 Team</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #4A154B;
+            color: #FFFFFF;
+        }
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 1000px;
+        }
+
+        .profile {
+            background-color: #252525;
+            border: 8px;
+            border-radius: 8px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .social-links{
+            display: flex;
+            justify-content: start;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 0.8em;
+        }
+
+        .social-links img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+
+        .separator {
+            width: 1px;
+            background-color: #FFFFFF;
+            margin: 0 15px;
+        }
+
+        .short-bio {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            color: #FFFFFF;
+            flex-grow: 1;
+        } 
+    </style>
 </head>
 <body>
+    <div class="profile-grid">
+        <div class="profile">
+            <img src="assets/Omoruyi.jpg" alt="Profile 1">
+            <div class="profile-info">
+                <h3>Omoruyi Emmanuel Osakue</h3>
+                <p>Cloud Engineering</p>
+                <div class="social-links">
+                    <a href="https://github.com/UyiDEV"><img src="assets/icons/github.png" alt="A github icon"></a>
+                    <a href="https://www.linkedin.com/in/omoruyi-osakue/"><img src="assets/icons/linkedin.png" alt="A linkedin icon"></a>
+                    <a href="mailto:osakueomoruyi@gmail.com"><img src="assets/icons/mail.png" alt="A mail icon"></a>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <p class="short-bio">A short bio about Omoruyi Emmanuel Osakue goes here. Describe their skills, interests, and experiences in cloud engineering.</p>
+        </div>
+    </div>
+    <div class="profile-grid">
+        <div class="profile">
+            <img src="assets/Jacinth.jpg" alt="Profile 2">
+            <div class="profile-info">
+                <h3>Jacinth Toochukwu David</h3>
+                <p>Cloud Engineering</p>
+                <div class="social-links">
+                    <a href="https://github.com/jdmghk"><img src="assets/icons/github.png" alt="A github icon"></a>
+                    <a href="https://www.linkedin.com/in/jacinth-david-990a03211/"><img src="assets/icons/linkedin.png" alt="A linkedin icon"></a>
+                    <a href="mailto:jacinthdavid70@gmail.com"><img src="assets/icons/mail.png" alt="A mail icon"></a>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <p class="short-bio">A short bio about Jacinth Toochukwu David goes here. Describe their skills, interests, and experiences in cloud engineering.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- <body>
     <header>
 
     </header>
@@ -25,4 +126,4 @@
 
     </footer>
 </body>
-</html>
+</html> -->
